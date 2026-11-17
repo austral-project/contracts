@@ -1,0 +1,49 @@
+{
+    "name": "austral/contracts",
+    "type": "library",
+    "description": "Austral shared contracts: interfaces, value objects and enums used across the Austral bundles",
+    "keywords": [
+        "Austral",
+        "Contracts",
+        "Interfaces",
+        "Abstractions"
+    ],
+    "license": "MIT",
+    "homepage": "https://austral.dev",
+    "authors": [
+        {
+            "name": "Matthieu Beurel",
+            "email": "matthieu@austral.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.2 <9.0",
+        "doctrine/collections": "^2.2",
+        "symfony/http-foundation": "^7.4"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "phpstan/phpstan": "^2.0",
+        "phpstan/phpstan-symfony": "^2.0",
+        "phpunit/phpunit": "^10.5 || ^11"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Austral\\Contracts\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Austral\\Contracts\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "stan": "vendor/bin/phpstan analyse"
+    },
+    "prefer-stable": true
+}
