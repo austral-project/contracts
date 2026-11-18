@@ -1,5 +1,10 @@
 # Austral Contracts
 
+[![Version](https://img.shields.io/packagist/v/austral/contracts?label=version)](https://packagist.org/packages/austral/contracts)
+[![CI](https://github.com/austral-project/contracts/actions/workflows/ci.yml/badge.svg?branch=4.x)](https://github.com/austral-project/contracts/actions/workflows/ci.yml)
+[![PHP](https://img.shields.io/packagist/dependency-v/austral/contracts/php)](https://packagist.org/packages/austral/contracts)
+[![License](https://img.shields.io/packagist/l/austral/contracts)](LICENSE)
+
 Shared abstractions of the [Austral](https://austral.dev) bundles: interfaces, small value objects and enums.
 
 This is **layer 0** of Austral V4. Every Austral bundle may depend on it; it depends on no Austral bundle.
@@ -21,7 +26,7 @@ Requires PHP 8.2 or higher. It is not a Symfony bundle: there is nothing to regi
 | `Austral\Contracts\Entity` | `EntityInterface` | entity-bundle (`Entity`) |
 | `Austral\Contracts\Translate` | `TranslateMasterInterface`, `TranslateChildInterface` | entity-translate-bundle |
 | `Austral\Contracts\File` | `FileInterface` | entity-file-bundle |
-| `Austral\Contracts\Domain` | `FilterByDomainInterface` | domain-bundle (ex http-bundle) |
+| `Austral\Contracts\Domain` | `FilterByDomainInterface` | http-bundle |
 | `Austral\Contracts\Link` | `LinkResolverInterface`, `ResolvedLink` | seo-bundle |
 | `Austral\Contracts\Enum` | `PublicationStatus` | — |
 
@@ -64,3 +69,7 @@ composer stan
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+## Credits
+
+Created by [Matthieu Beurel](https://www.mbeurel.com). Sponsored by [Yipikai Studio](https://yipikai.studio).

@@ -31,9 +31,9 @@ interface TranslateMasterInterface extends EntityInterface
   public function getId(): string;
 
   /**
-   * @return $this
+   * @return TranslateChildInterface<T>
    */
-  public function createNewTranslateByLanguage(): self;
+  public function createNewTranslateByLanguage(): TranslateChildInterface;
 
   /**
    * @param string $name
