@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Austral Contracts package.
  *
@@ -10,11 +11,12 @@
 
 namespace Austral\Contracts\File;
 
-use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Austral\Contracts\Entity\EntityInterface;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Austral Entity File Interface.
+ *
  * @template T of object
  *
  * @extends EntityInterface<T>
@@ -23,7 +25,6 @@ use Austral\Contracts\Entity\EntityInterface;
  */
 interface FileInterface extends EntityInterface
 {
-
   /**
    * @return string
    */
@@ -41,12 +42,13 @@ interface FileInterface extends EntityInterface
 
   /**
    * @param array<string|int, UploadedFile|null> $uploadFiles
+   *
    * @return $this
    */
   public function setUploadFiles(array $uploadFiles = []): self;
 
   /**
-   * @param string $fieldname
+   * @param string            $fieldname
    * @param UploadedFile|null $uploadedFile
    *
    * @return $this
@@ -69,7 +71,7 @@ interface FileInterface extends EntityInterface
 
   /**
    * @param string $fieldname
-   * @param mixed $value
+   * @param mixed  $value
    *
    * @return $this
    */
@@ -86,5 +88,4 @@ interface FileInterface extends EntityInterface
    * @return $this
    */
   public function setDeleteFiles(array $deleteFiles): self;
-
 }

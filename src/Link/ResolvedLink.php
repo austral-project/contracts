@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Austral Contracts package.
  *
@@ -17,7 +18,6 @@ namespace Austral\Contracts\Link;
  */
 final readonly class ResolvedLink
 {
-
   /**
    * @param string|null $url    Public URL of the linked entity
    * @param string|null $label  Default label (usually the entity name)
@@ -31,5 +31,4 @@ final readonly class ResolvedLink
     public ?object $source = null,
   ) {
   }
-
 }

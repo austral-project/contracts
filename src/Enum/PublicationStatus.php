@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Austral Contracts package.
  *
@@ -18,13 +19,12 @@ namespace Austral\Contracts\Enum;
  */
 enum PublicationStatus: string
 {
-  case Published = "published";
-  case Unpublished = "unpublished";
-  case Draft = "draft";
+  case Published = 'published';
+  case Unpublished = 'unpublished';
+  case Draft = 'draft';
 
   public function isPublished(): bool
   {
-    return $this === self::Published;
+    return self::Published === $this;
   }
-
 }

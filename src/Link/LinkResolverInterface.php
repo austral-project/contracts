@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Austral Contracts package.
  *
@@ -21,13 +22,11 @@ namespace Austral\Contracts\Link;
  */
 interface LinkResolverInterface
 {
-
   /**
    * @param string $entityClass Classname (or mapping key) of the linked entity
    * @param string $id          Identifier of the linked entity
    *
-   * @return ResolvedLink|null  null when the entity has no public URL
+   * @return ResolvedLink|null null when the entity has no public URL
    */
   public function resolve(string $entityClass, string $id): ?ResolvedLink;
-
 }

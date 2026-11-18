@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Austral Contracts package.
  *
@@ -14,6 +15,7 @@ use Austral\Contracts\Entity\EntityInterface;
 
 /**
  * Entity attached to a domain (multi-domain websites).
+ *
  * @template T of object
  *
  * @extends EntityInterface<T>
@@ -22,11 +24,10 @@ use Austral\Contracts\Entity\EntityInterface;
  */
 interface FilterByDomainInterface extends EntityInterface
 {
-
   /**
    * Identifier of the master domain, used when an entity is shared by all domains.
    */
-  public const DOMAIN_ID_MASTER = "master";
+  public const DOMAIN_ID_MASTER = 'master';
 
   /**
    * @return string|null
@@ -39,5 +40,4 @@ interface FilterByDomainInterface extends EntityInterface
    * @return $this
    */
   public function setDomainId(?string $domainId = self::DOMAIN_ID_MASTER): self;
-
 }

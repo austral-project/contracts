@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Austral Contracts package.
  *
@@ -15,6 +16,7 @@ use Doctrine\Common\Collections\Collection;
 
 /**
  * Austral Entity Translate Master Interface.
+ *
  * @template T of object
  *
  * @extends EntityInterface<T>
@@ -23,7 +25,6 @@ use Doctrine\Common\Collections\Collection;
  */
 interface TranslateMasterInterface extends EntityInterface
 {
-
   /**
    * @return string
    */
@@ -43,7 +44,7 @@ interface TranslateMasterInterface extends EntityInterface
 
   /**
    * @param string $name
-   * @param mixed $value
+   * @param mixed  $value
    *
    * @return $this
    */
@@ -100,7 +101,7 @@ interface TranslateMasterInterface extends EntityInterface
 
   /**
    * @param TranslateChildInterface<T> $translate
-   * @param string $fieldKey
+   * @param string                     $fieldKey
    *
    * @return mixed
    */
@@ -108,8 +109,8 @@ interface TranslateMasterInterface extends EntityInterface
 
   /**
    * @param TranslateChildInterface<T> $translate
-   * @param string $fieldKey
-   * @param mixed $value
+   * @param string                     $fieldKey
+   * @param mixed                      $value
    *
    * @return $this
    */
@@ -143,5 +144,4 @@ interface TranslateMasterInterface extends EntityInterface
    * @return $this
    */
   public function addTranslateByLanguage(TranslateChildInterface $child): self;
-
 }

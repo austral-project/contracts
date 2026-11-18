@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Austral Contracts package.
  *
@@ -12,13 +13,13 @@ namespace Austral\Contracts\Entity;
 
 /**
  * Austral Interface Entity.
+ *
  * @template T of object
  *
  * @author Matthieu Beurel <matthieu@austral.dev>
  */
 interface EntityInterface
 {
-
   /**
    * @return string
    */
@@ -99,18 +100,18 @@ interface EntityInterface
    * @param string $fieldname
    *
    * @return mixed
+   *
    * @throws \Exception
    */
   public function getValueByFieldname(string $fieldname): mixed;
 
   /**
    * @param string $fieldname
-   * @param mixed $value
+   * @param mixed  $value
    *
    * @return $this
+   *
    * @throws \Exception
    */
   public function setValueByFieldname(string $fieldname, mixed $value = null): self;
-
-
 }

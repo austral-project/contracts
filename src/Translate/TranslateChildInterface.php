@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the Austral Contracts package.
  *
@@ -9,10 +10,12 @@
  */
 
 namespace Austral\Contracts\Translate;
+
 use Austral\Contracts\Entity\EntityInterface;
 
 /**
  * Austral Entity Translate Child Interface.
+ *
  * @template T of object
  *
  * @extends EntityInterface<T>
@@ -21,7 +24,6 @@ use Austral\Contracts\Entity\EntityInterface;
  */
 interface TranslateChildInterface extends EntityInterface
 {
-
   /**
    * Set master
    *
@@ -33,6 +35,7 @@ interface TranslateChildInterface extends EntityInterface
 
   /**
    * Get master
+   *
    * @return TranslateMasterInterface<T>
    */
   public function getMaster(): TranslateMasterInterface;
@@ -48,6 +51,7 @@ interface TranslateChildInterface extends EntityInterface
    * Set language
    *
    * @param string|null $language
+   *
    * @return $this
    */
   public function setLanguage(?string $language): self;
@@ -63,9 +67,8 @@ interface TranslateChildInterface extends EntityInterface
 
   /**
    * Get isReferent
+   *
    * @return bool
    */
   public function getIsReferent(): bool;
-
-
 }
