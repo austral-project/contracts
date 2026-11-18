@@ -18,7 +18,7 @@ never through the concrete classes of the other bundle.
 composer require austral/contracts
 ```
 
-Requires PHP 8.2 or higher. It is not a Symfony bundle: there is nothing to register in `config/bundles.php`.
+Requires PHP 8.4 or higher. It is not a Symfony bundle: there is nothing to register in `config/bundles.php`.
 
 ## Content
 
