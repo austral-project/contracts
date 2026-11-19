@@ -62,11 +62,6 @@ interface EntityInterface
   /**
    * @return string
    */
-  public function serialize(): string;
-
-  /**
-   * @return string
-   */
   public function getClassname(): string;
 
   /**
