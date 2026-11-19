@@ -46,7 +46,7 @@ interface TranslateMasterInterface extends EntityInterface
    * @param string $name
    * @param mixed  $value
    *
-   * @return $this
+   * @return void
    */
   public function __set(string $name, mixed $value);
 
@@ -71,7 +71,7 @@ interface TranslateMasterInterface extends EntityInterface
   /**
    * Get translations
    *
-   * @return Collection<int, T>
+   * @return Collection<int, TranslateChildInterface<T>>
    */
   public function getTranslates(): Collection;
 
