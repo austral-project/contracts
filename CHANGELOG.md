@@ -13,6 +13,7 @@ First version of `austral/contracts`, the layer 0 package of Austral V4.
 - `Entity\EntityInterface` (from entity-bundle `Austral\EntityBundle\Entity\EntityInterface`)
 - `Translate\TranslateMasterInterface`, `Translate\TranslateChildInterface` (from entity-translate-bundle)
 - `File\FileInterface` (from entity-file-bundle)
+- `File\CropperInterface` (from entity-file-bundle `Austral\EntityFileBundle\Entity\Interfaces\CropperInterface`)
 - `Domain\FilterByDomainInterface` (from http-bundle), with the `DOMAIN_ID_MASTER` constant
 - `Link\LinkResolverInterface` and `Link\ResolvedLink`: internal link resolution, implemented by seo-bundle
 - `Enum\PublicationStatus`: `published`, `unpublished`, `draft`
