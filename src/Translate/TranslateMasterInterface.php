@@ -36,6 +36,13 @@ interface TranslateMasterInterface extends EntityInterface
   public function createNewTranslateByLanguage(): TranslateChildInterface;
 
   /**
+   * Class of the translation entity, known without creating an instance.
+   *
+   * @return class-string<TranslateChildInterface<T>>
+   */
+  public function getTranslateClassname(): string;
+
+  /**
    * @param string $name
    *
    * @return mixed
