@@ -27,7 +27,7 @@ interface FilterByDomainInterface extends EntityInterface
   /**
    * Identifier of the master domain, used when an entity is shared by all domains.
    */
-  const string DOMAIN_ID_MASTER = 'master';
+  public const string DOMAIN_ID_MASTER = 'master';
 
   /**
    * @return string|null
